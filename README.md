@@ -17,3 +17,9 @@ Konversi suhu merupakan sebuah aplikasi yang digunakan untuk melakukan konversi 
 4. Terdapat sebuah pertanyaan kepada user untuk melakukan pengkonversian lagi atau tidak
 5. "n" lalu enter untuk berhenti menggunakan aplikasi dan tombol lain lalu enter untuk terus menggunakan aplikasi
 6. Pertanyaan selalu muncul setelah konversi berhasil ditampilkan
+
+## Design User Interface
+https://www.figma.com/design/w0kMwYEON7I51YGW8D84Dz/Untitled?node-id=0-1&t=G9aAjhK7JmYt9hNa-1
+
+## Prototype 
+https://www.figma.com/proto/w0kMwYEON7I51YGW8D84Dz/convert-suhu-fajar-sayuto?node-id=1-2&t=RPk7NRKFQbwdGbe5-1
