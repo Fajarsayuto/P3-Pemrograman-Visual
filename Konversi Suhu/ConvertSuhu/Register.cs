@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace ConvertSuhu
 {
@@ -16,22 +8,6 @@ namespace ConvertSuhu
         public Register()
         {
             InitializeComponent();
-        }
-
-        private MySqlConnection GetConnection()
-        {
-            string connectionString = "Server=localhost;Database=convertSuhu;Uid=root;Pwd=;";
-            return new MySqlConnection(connectionString);
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Register_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,37 +22,14 @@ namespace ConvertSuhu
                 return;
             }
 
-            using (MySqlConnection conn = GetConnection())
+            bool success = userActivity.RegisterUser(email, username, password);
+            if (success)
             {
-                try
-                {
-                    conn.Open();
-
-                    string query = "INSERT INTO Users (Email, Username, PasswordHash) VALUES (@Email, @Username, @Password)";
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@Email", email);
-                    cmd.Parameters.AddWithValue("@Username", username);
-                    cmd.Parameters.AddWithValue("@Password", password);
-
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Registrasi berhasil!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    Form1 loginForm = new Form1();
-                    loginForm.Show();
-                    this.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error saat registrasi: " + ex.Message);
-                }
+                MessageBox.Show("Registrasi berhasil!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Form1 loginForm = new Form1();
+                loginForm.Show();
+                this.Close();
             }
-        }
-
-
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void LOGIN_Click(object sender, EventArgs e)
@@ -84,6 +37,21 @@ namespace ConvertSuhu
             Form1 loginForm = new Form1();
             loginForm.Show();
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

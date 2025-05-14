@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -13,8 +6,6 @@ namespace ConvertSuhu
 {
     public partial class EditProfil : Form
     {
-        private string connectionString = "Server=localhost;Database=convertSuhu;Uid=root;Pwd=;";
-
         private int userId;
 
         public EditProfil(int userId)
@@ -30,7 +21,7 @@ namespace ConvertSuhu
 
         private void LoadUserData()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = Database.GetConnection())
             {
                 string query = "SELECT Username, Email, PasswordHash FROM users WHERE UserID = @UserID";
 
@@ -83,40 +74,20 @@ namespace ConvertSuhu
 
             if (dialogResult == DialogResult.Yes)
             {
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                bool success = userActivity.UpdateUser(userId, username, email, passwordHash);
+
+                if (success)
                 {
-                    string query = "UPDATE users SET Username = @Username, Email = @Email, PasswordHash = @PasswordHash WHERE UserID = @UserID";
-
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@Username", username);
-                        cmd.Parameters.AddWithValue("@Email", email);
-                        cmd.Parameters.AddWithValue("@PasswordHash", passwordHash); 
-                        cmd.Parameters.AddWithValue("@UserID", userId);
-
-                        try
-                        {
-                            conn.Open();
-                            int rowsAffected = cmd.ExecuteNonQuery();
-
-                            if (rowsAffected > 0)
-                            {
-                                MessageBox.Show("Data berhasil diperbarui.");
-                                HOME homeForm = new HOME(userId);
-                                homeForm.Show();
-                                this.Close();
-                            }
-                            else
-                            {
-                                MessageBox.Show("Tidak ada data yang diperbarui.");
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show("Gagal memperbarui data: " + ex.Message);
-                        }
-                    }
+                    MessageBox.Show("Data berhasil diperbarui.");
+                    HOME homeForm = new HOME(userId);
+                    homeForm.Show();
+                    this.Close();
                 }
+                else
+                {
+                    MessageBox.Show("Tidak ada data yang diperbarui.");
+                }
+
             }
         }
 

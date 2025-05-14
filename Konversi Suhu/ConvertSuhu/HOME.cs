@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+
 
 namespace ConvertSuhu
 {
@@ -18,16 +12,11 @@ namespace ConvertSuhu
         private bool isUpdatingCombo = false;
         private int userId;
 
-
-
         public HOME(int userId)
         {
             InitializeComponent();
             this.userId = userId;
         }
-
-        public HOME() : this(0) { }
-
 
         private void HOME_Load(object sender, EventArgs e)
         {
@@ -96,28 +85,6 @@ namespace ConvertSuhu
             isLoadingCombo = false;
         }
 
-
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
         private void LOGIN_Click(object sender, EventArgs e)
         {
             if (!double.TryParse(textBox3.Text, out double input))
@@ -135,107 +102,11 @@ namespace ConvertSuhu
                 return;
             }
 
-            double inCelcius = input;
-            switch (from)
-            {
-                case "Fahrenheit": inCelcius = (input - 32) * 5 / 9; break;
-                case "Kelvin": inCelcius = input - 273.15; break;
-                case "Reamur": inCelcius = input * 5 / 4; break;
-            }
+            double hasil = SuhuConverter.Konversi(input, from, to);
 
-            double result = inCelcius;
-            switch (to)
-            {
-                case "Fahrenheit": result = (inCelcius * 9 / 5) + 32; break;
-                case "Kelvin": result = inCelcius + 273.15; break;
-                case "Reamur": result = inCelcius * 4 / 5; break;
-            }
-
-            textBox4.Text = $"{result:F2} {to}";
-            SimpanKeDatabase(input, from, to, result);
-
+            textBox4.Text = $"{hasil:F2} {to}";
+            userActivity.Simpan(userId, input, from, to, hasil);
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show(
-                "Apakah Anda yakin ingin keluar?",
-                "Konfirmasi Logout",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                Form1 loginForm = new Form1();
-                loginForm.Show();
-                this.Close();
-            }
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            ResetForm();
-        }
-
-
-        private void SimpanKeDatabase(double suhuAwal, string dariSatuan, string keSatuan, double hasil)
-        {
-            string connectionString = "Server=localhost;Database=convertSuhu;Uid=root;Pwd=;";
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
-            {
-                string query = "INSERT INTO history (UserID, SuhuAwal, DariSatuan, KeSatuan, Hasil) " +
-                               "VALUES (@UserID, @SuhuAwal, @DariSatuan, @KeSatuan, @Hasil)";
-
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@UserID", userId);
-                    cmd.Parameters.AddWithValue("@SuhuAwal", suhuAwal);
-                    cmd.Parameters.AddWithValue("@DariSatuan", dariSatuan);
-                    cmd.Parameters.AddWithValue("@KeSatuan", keSatuan);
-                    cmd.Parameters.AddWithValue("@Hasil", hasil);
-
-                    try
-                    {
-                        conn.Open();
-                        cmd.ExecuteNonQuery();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Gagal menyimpan history: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-            }
-        }
-
-
-
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -276,16 +147,80 @@ namespace ConvertSuhu
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void button2_Click_1(object sender, EventArgs e)
         {
-            EditProfil EditForm = new EditProfil (Form1.LoggedInUserId);
+            EditProfil EditForm = new EditProfil(Form1.LoggedInUserId);
             EditForm.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ResetForm();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Apakah Anda yakin ingin keluar?",
+                "Konfirmasi Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Form1 loginForm = new Form1();
+                loginForm.Show();
+                this.Close();
+            }
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }
