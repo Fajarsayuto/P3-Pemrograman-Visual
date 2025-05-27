@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 using ConvertSuhu.Controllers;
 
@@ -8,6 +8,7 @@ namespace ConvertSuhu.Views
     {
         private int userId;
 
+        
         public EditProfil(int userId)
         {
             InitializeComponent();
@@ -44,7 +45,7 @@ namespace ConvertSuhu.Views
             DialogResult result = MessageBox.Show("Apakah Anda yakin ingin menyimpan perubahan?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                bool success = UserController.UpdateUser(userId, username, email, passwordHash);
+                bool success = UserController.UpdateProfile(userId, username, email, passwordHash);
                 if (success)
                 {
                     MessageBox.Show("Data berhasil diperbarui.");
@@ -64,6 +65,11 @@ namespace ConvertSuhu.Views
             HOME homeForm = new HOME(userId);
             homeForm.Show();
             this.Close();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

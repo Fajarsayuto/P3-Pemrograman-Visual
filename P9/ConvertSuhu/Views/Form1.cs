@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 using ConvertSuhu.Controllers;
 
@@ -13,12 +13,29 @@ namespace ConvertSuhu.Views
             InitializeComponent();
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Register registerForm = new Register();
+            registerForm.Show();
+            this.Hide();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
         private void LOGIN_Click(object sender, EventArgs e)
         {
-            string email = textBox1.Text;
-            string password = textBox2.Text;
+            string email = txtEmail.Text.Trim();
+            string password = txtPassword.Text;
 
-            if (!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
+            if (!string.IsNullOrWhiteSpace(email) && !string.IsNullOrWhiteSpace(password))
             {
                 if (AuthController.Login(email, password, out int userId))
                 {
@@ -36,18 +53,6 @@ namespace ConvertSuhu.Views
             {
                 MessageBox.Show("Mohon isi email dan password.", "Login Gagal", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Register registerForm = new Register();
-            registerForm.Show();
-            this.Hide();
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Close();
         }
     }
 }

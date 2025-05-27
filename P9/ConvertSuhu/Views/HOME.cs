@@ -1,114 +1,138 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 using ConvertSuhu.Controllers;
+using ConvertSuhu.Models;
+
 
 namespace ConvertSuhu.Views
 {
     public partial class HOME : Form
     {
-        private readonly string[] comboOptions = { "Celcius", "Fahrenheit", "Kelvin", "Reamur" };
-        private bool isUpdatingCombo = false;
-        private int userId;
+        private readonly HomeController homeController;
+
+        public int UserId { get; }
+
+        public HOME()
+        {
+            InitializeComponent();
+            homeController = new HomeController();
+        }
 
         public HOME(int userId)
         {
             InitializeComponent();
-            this.userId = userId;
+            homeController = new HomeController();
+            UserId = userId;
         }
 
         private void HOME_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.AddRange(comboOptions);
-            comboBox2.Items.AddRange(comboOptions);
-        }
+            comboBox1.Items.AddRange(new string[] { "Celcius", "Fahrenheit", "Reamur", "Kelvin" });
+            comboBox2.Items.AddRange(new string[] { "Celcius", "Fahrenheit", "Reamur", "Kelvin" });
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (isUpdatingCombo || comboBox1.SelectedItem == null) return;
-            isUpdatingCombo = true;
-            RefreshComboBox(comboBox1, comboBox2);
-            isUpdatingCombo = false;
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (isUpdatingCombo || comboBox2.SelectedItem == null) return;
-            isUpdatingCombo = true;
-            RefreshComboBox(comboBox2, comboBox1);
-            isUpdatingCombo = false;
-        }
-
-        private void RefreshComboBox(ComboBox changed, ComboBox target)
-        {
-            var selected = changed.SelectedItem.ToString();
-            var previous = target.SelectedItem?.ToString();
-            target.Items.Clear();
-            foreach (var option in comboOptions)
-                if (option != selected) target.Items.Add(option);
-            if (previous != null && target.Items.Contains(previous))
-                target.SelectedItem = previous;
-            else
-                target.SelectedIndex = -1;
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 1;
         }
 
         private void LOGIN_Click(object sender, EventArgs e)
         {
-            if (!double.TryParse(textBox3.Text, out double input))
+            if (comboBox1.SelectedItem == null || comboBox2.SelectedItem == null || string.IsNullOrWhiteSpace(textBox3.Text))
             {
-                MessageBox.Show("Masukkan angka yang valid.");
+                MessageBox.Show("Harap lengkapi semua input konversi suhu.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            string from = comboBox1.SelectedItem?.ToString();
-            string to = comboBox2.SelectedItem?.ToString();
+            string fromUnit = comboBox1.SelectedItem.ToString();
+            string toUnit = comboBox2.SelectedItem.ToString();
 
-            if (string.IsNullOrEmpty(from) || string.IsNullOrEmpty(to))
+            if (!double.TryParse(textBox3.Text, out double inputValue))
             {
-                MessageBox.Show("Silakan pilih satuan suhu asal dan tujuan.");
+                MessageBox.Show("Input harus berupa angka.", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            double hasil = HomeController.Konversi(input, from, to);
-            textBox4.Text = $"{hasil:F2} {to}";
+            double result = homeController.Konversi(inputValue, fromUnit, toUnit);
 
-            HistoryController.Simpan(userId, input, from, to, hasil);
+            textBox4.Text = result.ToString("F2");
+
+            int userId = Form1.LoggedInUserId;
+            homeController.SimpanRiwayat(userId, inputValue, fromUnit, toUnit, result);
         }
 
-        private void buttonReset_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex = -1;
-            comboBox2.SelectedIndex = -1;
-            textBox3.Text = "";
-            textBox4.Text = "";
-            comboBox1.Items.Clear();
-            comboBox2.Items.Clear();
-            comboBox1.Items.AddRange(comboOptions);
-            comboBox2.Items.AddRange(comboOptions);
+            
         }
 
-        private void buttonHistory_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            History historyForm = new History(userId);
+            History historyForm = new History(UserId);
             historyForm.Show();
             this.Hide();
         }
 
-        private void buttonEdit_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            EditProfil editForm = new EditProfil(userId);
+            EditProfil editForm = new EditProfil(UserId);
             editForm.Show();
             this.Hide();
         }
 
-        private void buttonLogout_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Yakin ingin logout?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Apakah Anda yakin ingin keluar?", "Konfirmasi Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
+                Form1.LoggedInUserId = -1;
                 Form1 loginForm = new Form1();
                 loginForm.Show();
-                this.Close();
+                this.Hide();
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.') ||
+                (e.KeyChar == '.' && textBox3.Text.Contains(".")))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

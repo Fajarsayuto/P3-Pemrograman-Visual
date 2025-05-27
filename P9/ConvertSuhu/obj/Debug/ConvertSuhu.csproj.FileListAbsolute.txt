@@ -1,0 +1,140 @@
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\ConvertSuhu.exe.config
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\ConvertSuhu.exe
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\ConvertSuhu.pdb
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.Form1.resources
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.Properties.Resources.resources
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.exe
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.pdb
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.History.resources
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.HOME.resources
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.Register.resources
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\Google.Protobuf.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\MySql.Data.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Buffers.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.IO.Pipelines.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Memory.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\ZstdSharp.dll
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\Google.Protobuf.pdb
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\Google.Protobuf.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\MySql.Data.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Buffers.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.IO.Pipelines.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Memory.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ASUS\source\repos\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertS.E024E74B.Up2Date
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\ConvertSuhu.exe.config
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\ConvertSuhu.exe
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\ConvertSuhu.pdb
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\BouncyCastle.Cryptography.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\Google.Protobuf.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Hash.xxHash.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\MySql.Data.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Buffers.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.IO.Pipelines.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Memory.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Numerics.Vectors.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\ZstdSharp.dll
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\BouncyCastle.Cryptography.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\Google.Protobuf.pdb
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\Google.Protobuf.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\K4os.Hash.xxHash.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\MySql.Data.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Buffers.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Configuration.ConfigurationManager.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.IO.Pipelines.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Memory.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Numerics.Vectors.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.csproj.AssemblyReference.cache
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.Form1.resources
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.History.resources
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.HOME.resources
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.Properties.Resources.resources
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.Register.resources
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.csproj.GenerateResource.cache
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.csproj.CoreCompileInputs.cache
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertS.E024E74B.Up2Date
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.exe
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.pdb
+E:\visual studio\ConvertSuhu\ConvertSuhu\obj\Debug\ConvertSuhu.EditProfil.resources
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\ConvertSuhu.exe.config
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\ConvertSuhu.exe
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\ConvertSuhu.pdb
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\BouncyCastle.Cryptography.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\Google.Protobuf.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\K4os.Hash.xxHash.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\MySql.Data.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Buffers.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.IO.Pipelines.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Memory.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Numerics.Vectors.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\ZstdSharp.dll
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\BouncyCastle.Cryptography.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\Google.Protobuf.pdb
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\Google.Protobuf.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\K4os.Hash.xxHash.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\MySql.Data.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Buffers.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.IO.Pipelines.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Memory.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Numerics.Vectors.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertSuhu.csproj.AssemblyReference.cache
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertSuhu.Properties.Resources.resources
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertSuhu.Register.resources
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertSuhu.csproj.GenerateResource.cache
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertSuhu.csproj.CoreCompileInputs.cache
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertS.E024E74B.Up2Date
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertSuhu.exe
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertSuhu.pdb
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertSuhu.Views.EditProfil.resources
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertSuhu.Views.Form1.resources
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertSuhu.Views.History.resources
+D:\fajar\P3-Pemrograman-Visual-master\P3-Pemrograman-Visual-master\Konversi Suhu\ConvertSuhu\obj\Debug\ConvertSuhu.Views.HOME.resources

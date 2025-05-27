@@ -1,18 +1,25 @@
-using ConvertSuhu.Models;
+﻿using ConvertSuhu.Models;
 using System.Collections.Generic;
+using System.Data;
 
 namespace ConvertSuhu.Controllers
 {
-    public class HistoryController
+    public static class HistoryController
     {
-        public static void SaveHistory(int userId, string conversion)
+        public static void SaveHistory(int userId, double input, string from, string to, double result)
         {
-            UserActivity.SaveConversionHistory(userId, conversion);
+            UserActivity.SaveConversionHistory(userId, input, from, to, result);
         }
 
-        public static List<string> GetHistory(int userId)
+        public static DataTable GetHistory(int userId)
         {
-            return UserActivity.GetConversionHistory(userId);
+            return UserActivity.GetConversionHistoryTable(userId);
         }
+
+        public static void HapusRiwayat(int id)
+        {
+            UserActivity.HapusRiwayat(id);
+        }
+
     }
 }

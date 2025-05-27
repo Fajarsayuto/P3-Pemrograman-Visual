@@ -1,4 +1,4 @@
-namespace ConvertSuhu.Models
+﻿namespace ConvertSuhu.Models
 {
     public class User
     {
