@@ -1,0 +1,1 @@
+// Simulated class definition (actual code was shared before)
